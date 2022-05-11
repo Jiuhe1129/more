@@ -11,7 +11,8 @@
     ::-webkit-scrollbar {display: none;}
     a,li{list-style: none; text-decoration: none; color: #000;}
     ul{display: flex; flex-wrap: wrap;}
-    li{width: 384px; height: 384px; line-height: 384px; font-size: 23px;}
+    a{width: 384px; height: 384px;}
+    li{width: auto; height: auto; line-height: 384px; font-size: 23px;}
     
     ul>a{position: relative; text-align: center;}
     ul>a::before{content: "";position:absolute;left: 0;top: 0;width: 100%;height: 100%; opacity: 0.3;}
@@ -22,7 +23,8 @@
     .mn::before {background: url(img/mn.jpg)no-repeat center; background-size: cover;}
     .aw::before {background: url(img/aw.jpg)no-repeat center; background-size: cover;}
     @media screen and (max-width: 768px){
-        li{border-top: 1px solid #000; border-bottom: 1px solid #000;}
+        a{width: 100%;}
+        li{width: 100%; border-top: 1px solid #000; border-bottom: 1px solid #000;}
     }
 </style>
 <body>
