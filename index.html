@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY子页</title>
+</head>
+<style>
+    *{margin: 0; padding: 0;}
+    ::-webkit-scrollbar {display: none;}
+    a,li{list-style: none; text-decoration: none; color: #000;}
+    ul{display: flex; flex-wrap: wrap;}
+    li{width: 384px; height: 384px; line-height: 384px; font-size: 23px;}
+    
+    ul>a{position: relative; text-align: center;}
+    ul>a::before{content: "";position:absolute;left: 0;top: 0;width: 100%;height: 100%; opacity: 0.3;}
+    .jiuhe::before {background: url(img/jiuhe.jpg)no-repeat center; background-size: cover;}
+    .home::before {background: url(img/home.jpg)no-repeat center; background-size: cover;}
+    .wy::before {background: url(img/wy.jpg)no-repeat center; background-size: cover;}
+    .cdzy::before {background: url(img/cdzy.jpg)no-repeat center; background-size: cover;}
+    .mn::before {background: url(img/mn.jpg)no-repeat center; background-size: cover;}
+    .aw::before {background: url(img/aw.jpg)no-repeat center; background-size: cover;}
+    @media screen and (max-width: 768px){
+        li{border-top: 1px solid #000; border-bottom: 1px solid #000;}
+    }
+</style>
+<body>
+    <div class="box">
+        <ul>
+            <a class="jiuhe" href="https://jiuhe1129.github.io"><li>我的主页(无手机端)</li></a>
+            <a class="home" href="https://jiuhe1129.github.io/home/"><li>起始页</li></a>
+            <a class="wy" href="https://jiuhe1129.github.io/wy/"><li>一句废话</li></a>
+            <a class="cdzy" href="https://jiuhe1129.github.io/cdzy/"><li>我的常职</li></a>
+            <a class="mn" href="https://jiuhe1129.github.io/mn/"><li>视差相册(暂无手机端)</li></a>
+            <a class="aw" href="https://jiuhe1129.github.io/aw/"><li>关于我(无手机端)</li></a>
+        </ul>
+    </div>
+</body>
+</html>
